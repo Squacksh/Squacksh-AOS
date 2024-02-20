@@ -37,19 +37,7 @@ android {
 
 dependencies {
 
-    Dependencies.KTX.run {
-        implementation(CORE)
-    }
-
-    Dependencies.AndroidX.run {
-        implementation(APP_COMPAT)
-        implementation(CONSTRAINT_LAYOUT)
-        implementation(MATERIAL)
-    }
-
-    Dependencies.Test.run {
-        implementation(JUNIT)
-        androidTestImplementation(ANDROID_TEST)
-        androidTestImplementation(ESPRESSO)
-    }
+    implementation(project(":presentation"))
+    implementation(project(":domain"))
+    implementation(project(":data"))
 }
