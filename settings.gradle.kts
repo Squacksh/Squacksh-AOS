@@ -15,4 +15,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "Scoresh"
 include(":app")
- 
+include(":presentation")
+include(":domain")
+include(":data")
