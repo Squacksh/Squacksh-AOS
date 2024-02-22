@@ -6,6 +6,8 @@ plugins {
 android {
     namespace = AppConfig.appNameSpace
     compileSdk = AppConfig.compileSdk
+    viewBinding.enable = true
+    dataBinding.enable = true
 
     defaultConfig {
         minSdk = AppConfig.minSdk
